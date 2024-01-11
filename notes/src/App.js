@@ -1,7 +1,15 @@
 import "./App.css";
 import { useState } from "react";
-function App() {
-  const [notes, setNotes] = useState([
+
+type Note = {
+  id:Number;
+  title:String;
+  content:String;
+}
+
+
+const App = ()=> {
+  const [notes, setNotes] = useState <Note[]> ([
     {
       id: 1,
       title: "title1",
