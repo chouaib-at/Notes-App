@@ -1,15 +1,8 @@
 import "./App.css";
 import { useState } from "react";
 
-type Note = {
-  id:Number;
-  title:String;
-  content:String;
-}
-
-
-const App = ()=> {
-  const [notes, setNotes] = useState <Note[]> ([
+const App = () => {
+  const [notes, setNotes] = useState([
     {
       id: 1,
       title: "title1",
@@ -47,6 +40,6 @@ const App = ()=> {
       </div>
     </div>
   );
-}
+};
 
 export default App;
